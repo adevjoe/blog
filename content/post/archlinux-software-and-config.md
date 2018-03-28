@@ -3,9 +3,9 @@ title: "我的 ArchLinux 安装配置"
 date: 2018-03-22
 lastmod: 2018-03-22
 draft: false
-keywords: ["ArchLinux", "gnome", "Linux"]
+keywords: ["ArchLinux", "Gnome", "Linux"]
 description: "我的 ArchLinux 安装配置"
-tags: ["ArchLinux", "gnome", "Linux"]
+tags: ["ArchLinux", "Gnome", "Linux"]
 categories: ["ArchLinux"]
 author: "Joe"
 

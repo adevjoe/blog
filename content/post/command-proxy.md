@@ -3,10 +3,10 @@ title: "命令行代理"
 date: 2017-08-05
 lastmod: 2017-08-05
 draft: false
-keywords: ["linux", "proxy"]
+keywords: ["Linux", "proxy"]
 description: "命令行代理"
-tags: ["linux", "proxy"]
-categories: ["linux", "proxy"]
+tags: ["Linux", "proxy"]
+categories: ["Linux", "proxy"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.
