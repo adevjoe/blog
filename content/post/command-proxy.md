@@ -21,9 +21,9 @@ mathjax: false
 ---
 
 
-## 在命令行中使用代理
+命令行如何优雅地科学上网？
 
-推荐使用工具 polipo，将 socks 代理到 http，实现命令行科学上网
+推荐使用工具 polipo，将 socks 代理到 http，实现命令行科学上网。
 
 <!--more-->
 
