@@ -39,7 +39,7 @@ $ chmod 600 ~/.ssh/authorized_keys
 
 4. 检查是否开通秘钥登录 `vi /etc/ssh/sshd_config` 确认以下设置正确    
 ````
-RSAAuthentication ye
+RSAAuthentication yes
 PubkeyAuthentication yes
 ````
 
@@ -49,3 +49,4 @@ $ systemctl restart sshd
 ```
 
 确认秘钥设置成功后，可以把 `PasswordAuthentication` 设置为 `no` ,禁止密码登录。
+设置完成之后也需要 `systemctl restart sshd` 重启 ssh 服务以生效。
