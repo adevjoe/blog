@@ -110,3 +110,5 @@ https://extensions.gnome.org/
 ### 推荐 ArchLinux 安装教程
 
 https://www.viseator.com/2017/05/17/arch_install/
+
+[更多 linux 技巧](https://github.com/adevjoe/shell-tool)

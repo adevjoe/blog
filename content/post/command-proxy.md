@@ -83,3 +83,5 @@ alias proxy="export http_proxy='http://127.0.0.1:8123' export https_proxy='http:
 ```
 
 这样以后每次需要代理时，先敲一个 `proxy` 就可以了，是不是贼方便。
+
+[更多 linux 技巧](https://github.com/adevjoe/shell-tool)

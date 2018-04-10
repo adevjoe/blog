@@ -50,3 +50,5 @@ $ systemctl restart sshd
 
 确认秘钥设置成功后，可以把 `PasswordAuthentication` 设置为 `no` ,禁止密码登录。
 设置完成之后也需要 `systemctl restart sshd` 重启 ssh 服务以生效。
+
+[更多 linux 技巧](https://github.com/adevjoe/shell-tool)
