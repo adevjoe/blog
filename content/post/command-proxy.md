@@ -48,9 +48,6 @@ allowedPorts = 1-65535
 # ss 代理配置
 socksParentProxy = "127.0.0.1:1080"
 socksProxyType = socks5
-
-daemonise = true
-logSyslog = true
 ````
 ### 3. 启动
 
