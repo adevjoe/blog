@@ -75,7 +75,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   toc = true                                                                            # 是否开启目录
   autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
   fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
-  bootcdn = true           # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
+  bootcdn = false           # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
   mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
@@ -93,12 +93,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = true
-    jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
-    slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
-    fancyboxJs = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
-    fancyboxCss = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
-    gitmentJS = '<script src="https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js" crossorigin="anonymous"></script>'
-    gitmentCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">'
+    jquery = '<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>'
+    slideout = '<script src="https://cdnjs.loli.net/ajax/libs/slideout/1.0.1/slideout.min.js"></script>'
+    fancyboxJs = '<script src="https://cdnjs.loli.net/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>'
+    fancyboxCss = '<link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css"></script>'
+    gitmentCSS = '<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">'
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
     owner = ""              # Your GitHub ID
@@ -128,4 +127,4 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     # m-instagram = "http://localhost:1313"
     # n-gitlab = "http://en.xianmin.org/hugo-theme-jane/"
     # o-goodreads = "http://en.xianmin.org/hugo-theme-jane/"
-    p-steam = "https://steamcommunity.com/id/T_he_T/"
+    p-steam = "https://steamcommunity.com/id/adevjoe"
