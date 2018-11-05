@@ -1,12 +1,12 @@
 ---
-title: "标题"
-date: 2018-01-01
-lastmod: 2018-01-01
+title: "Hugo + Firebase + Gitlab 自动化部署你的网站"
+date: 2018-11-05
+lastmod: 2018-11-05
 draft: true
-keywords: ["Linux"]
-description: "描述"
-tags: ["Linux"]
-categories: ["Linux"]
+keywords: ["Hugo", "Firebase", "CI/CD", "Gitlab"]
+description: "使用 Hugo 和 Firebase 搭建静态网站，构建自动化部署。"
+tags: ["Hugo", "Firebase", "CI/CD", "Gitlab"]
+categories: ["Hugo", "Firebase", "CI/CD", "Gitlab"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.
@@ -22,5 +22,16 @@ mathjax: false
 
 
 <!-- Edit Replace Here.-->
+自动化部署网站
 
 <!--more-->
+
+## Hugo
+
+## Firebase
+
+## 需要的环境
+
+## 步骤
+
+## Gitlab ci 配置文件
