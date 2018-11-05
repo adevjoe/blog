@@ -1,0 +1,16 @@
+image: nohitme/hugo-firebase:0.31.1
+
+before_script:
+  - hugo version
+  - firebase --version
+
+hugo_firebase:
+  stage: deploy
+  only:
+    - master
+  except:
+    - dev
+  script:
+  - rm -rf public
+  - hugo
+  - firebase deploy --token ${FIREBASE_TOKEN}
