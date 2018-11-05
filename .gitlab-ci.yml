@@ -1,4 +1,4 @@
-image: nohitme/hugo-firebase:0.31.1
+image: nohitme/hugo-firebase
 
 before_script:
   - hugo version
