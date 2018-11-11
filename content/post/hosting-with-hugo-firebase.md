@@ -1,7 +1,7 @@
 ---
 title: "Hugo + Firebase + Gitlab 自动化部署你的网站"
 date: 2018-11-05
-lastmod: 2018-11-05
+lastmod: 2018-11-11
 draft: false
 keywords: ["Hugo", "Firebase", "CI/CD", "Gitlab"]
 description: "使用 Hugo 和 Firebase 搭建静态网站，构建自动化部署。"
