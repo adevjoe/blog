@@ -2,7 +2,7 @@ language: go
 cache:
   directories:
     - $HOME/.cache/go-build
-    - $HOME/gopath/pkg/mod
+    - $HOME/gopath
     - $HOME/.npm
     - $HOME/node_modules
 
