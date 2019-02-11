@@ -1,24 +1,15 @@
-language: go
-cache:
-  directories:
-    - $HOME/.cache/go-build
-    - $HOME/gopath
-    - $HOME/.npm
-    - $HOME/node_modules
-
-go:
-    - "1.11.x"
+install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb -O /tmp/hugo.deb && sudo dpkg -i /tmp/hugo.deb
 
 branches:
   only:
     master
 
 before_script:
-    - go get -u -v github.com/gohugoio/hugo
     - npm install -g firebase-tools
 
 script:
-    - rm -rf public
+    - rm -rf public || exit 0
     - hugo
 
 after_success:
