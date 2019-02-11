@@ -1,4 +1,10 @@
 language: go
+cache:
+  directories:
+    - $HOME/.cache/go-build
+    - $HOME/gopath/pkg/mod
+    - $HOME/.npm
+    - $HOME/node_modules
 
 go:
     - "1.11.x"
