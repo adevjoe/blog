@@ -1,21 +1,51 @@
-### Skill
+## 个人信息
 
-1. Golang - 熟悉 gorm gin echo micro 等框架
-2. php - 1年使用经验，主要使用 thinkphp 框架
-3. mysql - 熟悉使用常见命令语句、做过一些 sql 性能优化
-4. redis - 能熟练使用 redis 做缓存，使用过 PUB SUB 实现简单的队列
-5. docker - 能熟练使用 docker 部署应用，编写 Dockerfile ,使用 docker-compose 编排容器
-6. git - 熟练使用 git，熟悉 git 协作流程
-7. rpc - 熟悉 thrift 和 grpc 使用
-8. linux - 开发使用 archlinux，熟练掌握 linux 下常用命令，熟悉 shell 脚本编写
+- 蔡峤 / 1995 / 两年工作经验
 
+- 本科 / 江西师范大学（2013 - 2017）
 
-### Experience
+- Email: adevjoe@gmail.com
 
-2017.4 - 至今 南昌同凯网络信息服务有限公司
+- Blog: [adevjoe.com](https://adevjoe.com)
 
-从事后端开发工作，期间参与开发了在线教育网校系统，包含视频、课程、题库、学习记录等功能。后台部分，独立开发了教师教务系统、代理分销统计系统。
+- Github: [github.com/adevjoe](https://github.com/adevjoe)
 
-使用 Golang 进行微服务改造，负责网校和答题系统重构，使用 consul + micro 微服务框架。
+## 工作经历
 
-工作期间推进开发环境统一，逐渐从 windows 转移到 linux，开发环境使用 docker 统一，大大减少新人环境搭建时间。在负责服务器管理期间，规范资源的使用权限，不断优化资源配置。开发过程中也推动了接口文档化和业务模块化。
+### 南昌同凯网络信息服务有限公司（2017.4 - 2019.2）
+
+#### 重构商城体系
+
+sku go mq redis 架构 扩展 离线业务 定时脚本
+
+#### PHP 向 Golang 迁移
+
+grpc micro 微服务 consul gin gorm haproxy docker 服务器数量减少
+
+#### CI/CD 落地：开发、测试、发布自动化实践
+
+#### 接口文档建设
+
+## 技术分享
+
+- 介绍公司目前的架构和后端技术栈： [考呀呀后端架构介绍](https://www.zybuluo.com/adevjoe/note/1346560)
+
+- Jenkins 实践之后的分享： [Jenkins 介绍](https://www.zybuluo.com/adevjoe/note/1415496)
+
+## 技能
+
+- Golang - 熟悉 Gorm、Gin、Echo、Micro、gRPC 等框架
+- MySQL - 熟悉 SQL 语句编写，做过一些 SQL 性能优化
+- Redis - 熟练使用 Redis，并使用自带的 Lpush/Lpop 和 Pub/Sub 来做消息队列
+- Docker - 熟练使用 Docker 部署应用，能够编写 Dockerfile ,使用 docker-compose 进行容器编排
+- Git - 熟练使用 Git 进行代码管理和协作开发
+- CI/CD - 熟练使用 Jenkins 自动化程序的构建和部署，能够编写 Jenkins 插件
+- Shell - 用来编写一些脚本提高工作效率
+- PHP - ThinkPHP、Composer
+- JavaScript - Vue
+- Mac/Linux - 日常开发环境
+- 阿里云 - 熟练使用 CDN、RDS、OSS、容器服务、SLB、VPC
+
+## 个人介绍
+
+非科班出身的程序员，大学期间误打误撞进入编程的世界，通过自学开发了一个网盘项目。喜欢追逐新技术，目前专注于 Golang 相关的开发，喜欢 Docker、Kubernetes、Flutter、gRPC-Web，希望接下来能在这些领域有所发展。非常热衷于自动化工作和生活中的一些流程，既能提高效率也能给自己省下更多的时间去体验生活。在代码上注重整洁和结构清晰，不喜欢代码中过多的单词拼写错误。
