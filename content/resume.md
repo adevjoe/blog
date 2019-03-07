@@ -32,9 +32,13 @@
 
 ## 技术分享
 
-- 介绍后端架构的内部分享： [考呀呀后端架构介绍](https://www.zybuluo.com/adevjoe/note/1346560)
+#### 介绍后端架构的内部分享： [考呀呀后端架构介绍](https://www.zybuluo.com/adevjoe/note/1346560)
 
-- Jenkins 实践之后的内部分享： [Jenkins 介绍](https://www.zybuluo.com/adevjoe/note/1415496)
+主要介绍了考呀呀的后端架构，包括架构的演进、技术栈的选择和使用 Golang 的一些经验。目的让团队成员对现有架构有一定理解，帮助今后的开发工作。
+
+#### Jenkins 实践之后的内部分享： [Jenkins 介绍](https://www.zybuluo.com/adevjoe/note/1415496)
+
+为了让团队成员都能参与到 Devops 中来，我介绍了以往的部署流程，和现在改进方案。让开发同学了解到了自己的代码经过了怎样的流程，怎么交付到生产环境。
 
 ## 技能
 
