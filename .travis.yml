@@ -16,9 +16,8 @@ cache:
   - "$HOME/.npm"
 
 script:
-    - rm -rf public || exit 0
-    - hugo
+  - rm -rf public || exit 0
+  - hugo
 
-deploy:
-  provider: script
-  script: firebase deploy --token ${FIREBASE_TOKEN}
+after_script:
+  - firebase deploy --token ${FIREBASE_TOKEN}
