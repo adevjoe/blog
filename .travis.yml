@@ -1,9 +1,9 @@
 install:
-  - if [ ! -f /blog/hugo.bed  ]; then wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb -O /blog/hugo.deb && sudo dpkg -i /blog/hugo.deb; fi
+  - if [ ! -f /tmp/hugo.deb  ]; then wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb -O /tmp/hugo.deb && sudo dpkg -i /tmp/hugo.deb; fi
 
 cache:
     directories:
-     - /blog/hugo.deb
+     - /tmp/hugo.deb
 
 script:
     - rm -rf public || exit 0
