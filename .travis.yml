@@ -10,10 +10,6 @@ branches:
 install:
   - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb -O /tmp/hugo.deb && sudo dpkg -i /tmp/hugo.deb
 
-cache:
-    directories:
-     - /tmp/hugo.deb
-
 script:
     - rm -rf public || exit 0
     - hugo
