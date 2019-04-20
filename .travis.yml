@@ -1,4 +1,4 @@
-brfore_install:
+install:
   - if [ ! -f /blog/hugo.bed  ]; then wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.deb -O /blog/hugo.deb && sudo dpkg -i /blog/hugo.deb; fi
 
 cache:
