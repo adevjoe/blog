@@ -114,10 +114,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   [params.social]                                         # 社交链接
     # a-email = "mailto:adevjoe@gmail.com"
     # b-stack-overflow = "http://localhost:1313"
-    # c-twitter = "http://localhost:1313"
+    # f-google = "http://localhost:1313"
     # d-facebook = "http://localhost:1313"
     # e-linkedin = "http://localhost:1313"
-    # f-google = "http://localhost:1313"
+    f-twitter = "https://twitter.com/adevjoe"
     g-github = "https://github.com/adevjoe"
     h-weibo = "https://weibo.com/Shadow95Time"
     # i-zhihu = "http://localhost:1313"
