@@ -18,6 +18,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
 [author]                  # essential                     # 必需
   name = "Joe"
+  email = "adevjoe@gmail.com"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -50,12 +51,12 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   since = "2017"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
-  rssFullContent = true     # if false, Rss feed instead of the summary
+  rssFullContent = false     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Joe"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Joe", "adevjoe","Golang","linux","博客","笔记"]
-  description = "后端开发者，golang 开发者。这里保存着一些笔记、编程思考和一些人生感悟。"
+  description = "看清这个世界，然后爱它。"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
   archive-paginate = 20
