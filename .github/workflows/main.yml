@@ -1,6 +1,9 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+    - master
 
 jobs:
   build:
@@ -13,3 +16,5 @@ jobs:
       uses: srt32/hugo-action@v0.0.3
     - name: Deploy on Firebase
       uses: w9jds/firebase-action@v1.0.1
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
