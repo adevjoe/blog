@@ -17,6 +17,6 @@ jobs:
     - name: Deploy on Firebase
       uses: w9jds/firebase-action@v1.0.1
       with:
-        cmd: deploy
+        args: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
