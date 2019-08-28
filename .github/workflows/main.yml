@@ -16,6 +16,7 @@ jobs:
       uses: srt32/hugo-action@v0.0.3
     - name: Deploy on Firebase
       uses: w9jds/firebase-action@v1.0.1
-      args: deploy --only hosting:prod
+      with:
+        cmd: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
