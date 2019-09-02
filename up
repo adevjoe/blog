@@ -1,0 +1,61 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# 本地图片替换图床图片
+#
+# 本地文章使用 img 目录图片，图片文件名格式为 article-name-num.jpg。
+# img.json 文件为图片对应图床地址。
+# 脚本执行内容：
+#   1. 读取 img 内容，匹配 img.json，没有则上传图床。
+#   2. 遍历 content/post，匹配使用了 img 图片的，替换为图床地址。
+#   3. 提交 commit 并 push。
+import os
+import re
+import json
+import requests
+
+IMAGE_FILE_NAME_REG = r'^[a-zA-Z0-9\-]{1,}-\d{1,}[\.]{1}(jpg|png|gif)$'
+
+
+def getContent():
+    pass
+
+
+def uploadImg(name):
+    pass
+
+
+def loadImgJson():
+    with open('img.json') as json_file:
+        data = json.load(json_file)
+        for img in data:
+            print('ID: ' + img['id'])
+            print('Name: ' + img['name'])
+            print('URL: ' + img['url'])
+            print('')
+
+
+def push():
+    pass
+
+
+def validImgName(list):
+    for img in list:
+        s = re.match(IMAGE_FILE_NAME_REG, img)
+        if s == None:
+            print("{} 格式不匹配。".format(img))
+            return False
+    return True
+
+
+if __name__ == "__main__":
+    # 获取 images 列表
+    imgList = os.listdir("img")
+    if not validImgName(imgList):
+        os._exit(0)
+    # 加载 img 数据
+    imgJson = loadImgJson()
+    # 匹配未上传的图片
+    for img in imgJson:
+        if img.id >0 and img.url == "":
+            url = uploadImg(img.name)
+            img.url = url
