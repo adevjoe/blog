@@ -14,6 +14,17 @@ import json
 import requests
 
 IMAGE_FILE_NAME_REG = r'^[a-zA-Z0-9\-]{1,}-\d{1,}[\.]{1}(jpg|png|gif)$'
+IMAGE_JSON_FILE = 'img.json'
+END_POINT = "https://sm.ms/api/v2"
+
+
+class Image(object):
+    def __init__(self, id, name, article_name, index, url=""):
+        self.id = int(id)
+        self.name = str(name)
+        self.article_name = str(article_name)
+        self.index = int(index)
+        self.url = str(url)
 
 
 def getContent():
@@ -21,17 +32,26 @@ def getContent():
 
 
 def uploadImg(name):
-    pass
+    h = {
+        "Authorization": "NHK4YAE0CU0fkX2T4D7FP0EcTsumWvUn"
+    }
+    f = {"smfile": (name, open('./img/{}'.format(name), "rb"))}
+    res = requests.post('{}/upload'.format(END_POINT), files=f, headers=h)
+    res = res.content
+    res = json.loads(res)
+    if res.get('success'):
+        return res.get('data', {}).get('url', '')
+    print('Upload file {} fail. Error: {}'.format(name, res.get('message')))
+    return ''
 
 
 def loadImgJson():
-    with open('img.json') as json_file:
+    with open(IMAGE_JSON_FILE) as json_file:
         data = json.load(json_file)
+        imgs = []
         for img in data:
-            print('ID: ' + img['id'])
-            print('Name: ' + img['name'])
-            print('URL: ' + img['url'])
-            print('')
+            imgs.append(Image(**img))
+    return imgs
 
 
 def push():
@@ -46,6 +66,19 @@ def validImgName(list):
             return False
     return True
 
+def getArticleNameByImageName(name):
+    names = name.split("-")
+    i = 0
+    for n in names:
+        if i >= len(names) - 1:
+            break
+        if i == 0:
+            name = n
+            i += 1
+            continue
+        name = "{}-{}".format(name, n)
+        i += 1
+    return name
 
 if __name__ == "__main__":
     # 获取 images 列表
@@ -54,8 +87,34 @@ if __name__ == "__main__":
         os._exit(0)
     # 加载 img 数据
     imgJson = loadImgJson()
+    for i in imgList:
+        index = 0
+        if len(imgJson) == 0:
+            imgJson.append(Image(1, i, getArticleNameByImageName(i), 1))
+            index += 1
+            continue
+        for j in imgJson:
+            num = len(imgJson)
+            if i == j.name: break
+            if index == num-1 and i != j.name:
+                imgJson.append(Image(num+1, i, getArticleNameByImageName(i), num+1))
+                break
+            index += 1
+    print("加载 {} 张图片。".format(len(imgJson)))
+
     # 匹配未上传的图片
+    print("上传图片中...")
+    upload_num = 0
     for img in imgJson:
-        if img.id >0 and img.url == "":
+        if img.id > 0 and not img.url:
+            pass
             url = uploadImg(img.name)
-            img.url = url
+            if url != "":
+                print("{} 上传完成。URL: {}".format(img.name, url))
+                img.url = url
+                upload_num += 1
+    
+    print("上传 {} 张图片。".format(upload_num))
+    a = json.dumps([ob.__dict__ for ob in imgJson])
+    with open(IMAGE_JSON_FILE, 'w') as outfile:
+        outfile.write(a)
