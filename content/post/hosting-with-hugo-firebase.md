@@ -37,7 +37,7 @@ Firebase 对移动应用的帮助真的非常大，能快速对接第三方登�
 我正在使用的 Hosting(静态网站托管)也是其中一项，Hosting 能自动开启 SSL，不需要自己配置。同时搭配的一系列数据分析和 A/B 测试服务，
 对应用成长作用巨大。
 
-![Jietu20181111-210825.jpg](https://i.loli.net/2018/11/11/5be829d82a1a1.jpg)
+![hosting-with-hugo-firebase-1](https://i.loli.net/2019/11/13/VgINPM6clGHo5w4.jpg)
 
 ## 这些是需要的
 
@@ -72,7 +72,7 @@ $ hugo && firebase deploy
 
 接着 Firebase 项目中应该有了发布记录，可以用访问看看有没有变化。
 
-![Jietu20181111-212541.jpg](https://i.loli.net/2018/11/11/5be82de5dc37c.jpg)
+![hosting-with-hugo-firebase-2](https://i.loli.net/2019/11/13/XUmMF9KDgrbioVS.jpg)
 
 ### 3. 编写 Gitlab CI 配置文件
 
@@ -110,12 +110,12 @@ $ firebase login:ci
 
 在 gitlab 仓库设置中添加上一步获取的 token，变量名是 `FIREBASE_TOKEN`
 
-![Jietu20181111-213404.jpg](https://i.loli.net/2018/11/11/5be82fda89f50.jpg)
+![hosting-with-hugo-firebase-3](https://i.loli.net/2019/11/13/7nfHUhMx3lvgmP1.jpg)
 
 ### 6. 推送仓库
 
 commit 并 push 到 gitlab，此时在 gitlab 仓库中的 CI/CD 菜单就能看到构建的项目了。
 
-![Jietu20181111-213916.jpg](https://i.loli.net/2018/11/11/5be83113f11e2.jpg)
+![hosting-with-hugo-firebase-4](https://i.loli.net/2019/11/13/TojFgJiV9uUeYpE.jpg)
 
 感兴趣的可以尝试一波哟！

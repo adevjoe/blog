@@ -31,7 +31,7 @@ mathjax: false
 在第一次做这道题时，我按照描述，依次实现代码。第一个是想到将字符串转为 `byte`，
 并按照规则识别每个字节。该实现过于冗长并复杂，调试几次后，终于通过了 leetcode 的测试。
 提交如下，执行了 8ms
-![](https://i.loli.net/2018/12/04/5c0691d56d5e1.jpg)
+![string-to-integer-research-1](https://i.loli.net/2019/11/13/9Bj6g2SmqHihGEM.jpg)
 
 代码如下:
 ```go
