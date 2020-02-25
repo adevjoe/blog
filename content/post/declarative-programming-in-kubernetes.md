@@ -1,12 +1,12 @@
 ---
-title: "声明式编程在 Kubernetes 中的运用"
+title: "说一说 Kubernetes 中的声明式编程"
 date: 2019-08-05
 lastmod: 2017-08-05
 draft: true
-keywords: ["Linux", "proxy"]
+keywords: ["declarative", "声明式编程", "kubernetes"]
 description: "命令行代理"
 tags: ["Linux", "proxy"]
-categories: ["Linux", "proxy"]
+categories: ["kubernetes", "编程范式"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.
@@ -20,3 +20,10 @@ reward: false
 mathjax: false
 ---
 
+
+
+
+
+
+
+我是在 kubernetes 介绍中第一次看到声明式编程，
