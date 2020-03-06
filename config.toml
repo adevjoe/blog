@@ -36,15 +36,15 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "Tags"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-[[menu.main]]
   name = "Categories"
   weight = 40
   identifier = "categories"
   url = "/categories/"
+[[menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
 
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
@@ -120,9 +120,9 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     # e-linkedin = "http://localhost:1313"
     f-twitter = "https://twitter.com/adevjoe"
     g-github = "https://github.com/adevjoe"
-    h-weibo = "https://weibo.com/Shadow95Time"
+    # h-weibo = "https://weibo.com/Shadow95Time"
     # i-zhihu = "http://localhost:1313"
-    # j-douban = "http://localhost:1313"
+    # j-douban = "https://www.douban.com/people/146873118/"
     # k-pocket = "http://localhost:1313"
     # l-tumblr = "http://localhost:1313"
     # m-instagram = "http://localhost:1313"
