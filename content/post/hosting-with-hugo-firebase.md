@@ -6,7 +6,7 @@ draft: false
 keywords: ["Hugo", "Firebase", "CI/CD", "Gitlab"]
 description: "使用 Hugo 和 Firebase 搭建静态网站，构建自动化部署。"
 tags: ["Hugo", "Firebase", "CI/CD", "Gitlab"]
-categories: ["Hugo", "Firebase", "CI/CD", "Gitlab"]
+categories: ["CI/CD", "Deploy"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.

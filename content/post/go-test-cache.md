@@ -6,7 +6,7 @@ draft: false
 keywords: ["go", "go test", "go tool"]
 description: "go test cache"
 tags: ["go", "go test"]
-categories: ["go"]
+categories: ["Golang"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.

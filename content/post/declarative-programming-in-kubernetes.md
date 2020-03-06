@@ -6,7 +6,7 @@ draft: true
 keywords: ["declarative", "声明式编程", "kubernetes"]
 description: "命令行代理"
 tags: ["Linux", "proxy"]
-categories: ["kubernetes", "编程范式"]
+categories: ["Kubernetes"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.

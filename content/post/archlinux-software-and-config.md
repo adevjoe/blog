@@ -6,7 +6,7 @@ draft: false
 keywords: ["ArchLinux", "Gnome", "Linux"]
 description: "我的 ArchLinux 安装配置"
 tags: ["ArchLinux", "Gnome", "Linux"]
-categories: ["ArchLinux"]
+categories: ["Linux"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.

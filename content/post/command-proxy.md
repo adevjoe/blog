@@ -6,7 +6,7 @@ draft: false
 keywords: ["Linux", "proxy"]
 description: "命令行代理"
 tags: ["Linux", "proxy"]
-categories: ["Linux", "proxy"]
+categories: ["Tips"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.
