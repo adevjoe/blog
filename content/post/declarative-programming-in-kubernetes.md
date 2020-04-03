@@ -1,11 +1,11 @@
 ---
-title: "说一说 Kubernetes 中的声明式编程"
-date: 2019-08-05
-lastmod: 2017-08-05
+title: "Kubernetes 中的声明式编程"
+date: 2020-04-20
+lastmod: 2020-04-20
 draft: true
 keywords: ["declarative", "声明式编程", "kubernetes"]
-description: "命令行代理"
-tags: ["Linux", "proxy"]
+description: "Kubernetes 中的声明式编程"
+tags: ["Kubernetes", "declarative"]
 categories: ["Kubernetes"]
 author: "Joe"
 

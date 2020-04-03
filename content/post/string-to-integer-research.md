@@ -5,8 +5,8 @@ lastmod: 2018-12-04
 draft: false
 keywords: ["atoi"]
 description: "研究字符串转整形的算法与优化"
-tags: ["atoi", "算法"]
-categories: ["算法"]
+tags: ["atoi", "algorithm"]
+categories: ["Algorithm"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.
