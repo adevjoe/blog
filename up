@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # 本地图片替换图床图片
 #
@@ -48,6 +48,7 @@ def processContent(images):
                 continue
             for a in images:
                 if a.name == pic:
+                    print("替换图片 {} 为 {}。".format(pic, a.url))
                     c = c.replace(i,"{}-{}]({}".format(a.article_name, pic_index, a.url))
         b = open("{}/{}".format(CONTENT_PATH, post),'w')
         b.write(c)
