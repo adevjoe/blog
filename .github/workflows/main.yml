@@ -1,4 +1,4 @@
-name: Blog-CI-CD
+name: build-and-deploy-blog
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
     - master
 
 jobs:
-  build:
+  build-and-deploy:
 
     runs-on: ubuntu-latest
     
@@ -21,11 +21,10 @@ jobs:
     
     - name: Build
       run: hugo --minify
-
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
+      with:
+          name: dist
+          path: dist
+    
     - name: Deploy on Firebase
       uses: w9jds/firebase-action@v1.0.1
       with:
