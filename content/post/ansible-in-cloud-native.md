@@ -37,7 +37,7 @@ mathjax: false
 
 而如今的云原生产品生态中，很多应用会带一个 operator，用来部署管理应用的生命周期，例如 [prometheus-operator](https://github.com/coreos/prometheus-operator)。operator 会创建 CRD 用来定义应用，每当你创建或更新这个 CR，operator 监听并部署管理应用。如下图所示:
 
-![ansible-in-cloud-native-1](https://i.loli.net/2020/06/08/7ycTAhlPXYGbkgj.jpg)
+![ansible-in-cloud-native-1](https://images.adevjoe.com/ansible-in-cloud-native-1.jpg)
 
 在了解 Ansible 的时候，我一边想到它作为运维自动化工具的强大，一边也会想在 Kubernetes 中，还会用到 Ansible 吗。Jeff Geerling 的这篇[文章](https://www.ansible.com/blog/how-useful-is-ansible-in-a-cloud-native-kubernetes-environment)给了我们解答。
 
@@ -81,7 +81,7 @@ Ansible 使用 [Kubespray](https://kubespray.io/) 这样的工具来搭建 Kuber
 #### 应用生命周期管理
 
 Ansible 可以使用 [Operator SDK](https://github.com/operator-framework/operator-sdk) 来管理 Kubernetes 中应用的生命周期，包括安装、升级、备份等操作，而且不用写 Go 的代码，直接通过 Playbook 来描述产品部署的逻辑。在 operator 工具链中，我们还可以可视化安装升级应用。如下图所示，operator-hub 可以展示可用于安装的应用。
-![ansible-in-cloud-native-2](https://i.loli.net/2020/06/08/3TU7wZSvoJdOczY.jpg)
+![ansible-in-cloud-native-2](https://images.adevjoe.com/ansible-in-cloud-native-2.jpg)
 之前提到的 prometheus-operator，也可以用 ansible 实现，但是很多逻辑感觉不用代码很难表现出来，用 playbook只能做一些简单的逻辑。对于 operator-sdk，我建议还是用 go 来实现相关逻辑更靠谱一点，但是如果你的团队对 ansible 很熟练并且 operator 的逻辑不复杂的话，我觉得还是可以用的。
 
 #### 总结
