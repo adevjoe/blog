@@ -135,7 +135,7 @@ mysql> select thread_id,event_name,CURRENT_NUMBER_OF_BYTES_USED/1024/1024 from p
 
 在我们持续压测 MySQL Group Replication 集群中，观察到 MySQL 内存占用一直在缓慢上升。尽管到达了 `innodb buffer` 的内存上限，依然还在上涨，就算没有请求了，内存也只是维持不变，并不会下降。看起来是哪里有内存泄露了，长此以往运行下去，必然会到某时刻 OOM。这时通过 performance_schema 也无法查出内存泄露的地方，只能通过其他方式了。
 
-### 参考资料：
+### 参考资料
 
 1. https://dev.mysql.com/doc/refman/8.0/en/memory-use.html
 2. https://severalnines.com/database-blog/what-check-if-mysql-memory-utilisation-high
