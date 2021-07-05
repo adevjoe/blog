@@ -1,7 +1,7 @@
 ---
 title: "MySQL Group Replication 部署"
-date: 2021-07-05 11:02:21
-lastmod: 2021-07-05 11:02:21
+date: 2021-07-05T11:02:21+08:00
+lastmod: 2021-07-05T11:50:21+08:00
 draft: false
 keywords: ["MySQL", "MGR", "Group Replication", "MySQL Shell"]
 description: "MySQL Group Replication 部署，借助于 MySQL Shell"
@@ -12,7 +12,7 @@ author: "Joe"
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
 comment: true
-toc: false
+toc: true
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
 contentCopyright: <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" target="_blank">CC BY-NC-ND 4.0</a>
