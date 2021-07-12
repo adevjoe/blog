@@ -1,12 +1,12 @@
 ---
-title: "标题"
-date: 2018-01-01
-lastmod: 2018-01-01
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+lastmod: {{ .Date }}
 draft: true
-keywords: ["Linux"]
-description: "描述"
-tags: ["Linux"]
-categories: ["Linux"]
+keywords: ["Placeholder"]
+description: "Placeholder"
+tags: ["Placeholder"]
+categories: ["Placeholder"]
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.
@@ -20,7 +20,12 @@ reward: false
 mathjax: false
 ---
 
+<!-- Abstract -->
 
-<!-- Edit Replace Here.-->
+
 
 <!--more-->
+
+
+
+<!-- Content -->
