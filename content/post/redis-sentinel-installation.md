@@ -1,6 +1,6 @@
 ---
 title: "Redis Sentinel 部署"
-date: 2021-07-08T01:00:17+08:00
+date: 2021-01-25T14:22:17+08:00
 lastmod: 2021-07-08T01:00:17+08:00
 draft: false
 keywords: ["Redis", "Sentinel"]
