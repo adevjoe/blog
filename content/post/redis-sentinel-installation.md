@@ -3,7 +3,7 @@ title: "Redis Sentinel 部署"
 date: 2021-01-25T14:22:17+08:00
 lastmod: 2021-07-08T01:00:17+08:00
 draft: false
-keywords: ["Redis", "Sentinel"]
+keywords: ["Redis", "Sentinel", "Installation"]
 description: "用 Docker 部署 Redis 哨兵实例"
 tags: ["Redis", "Sentinel"]
 categories: ["Redis"]
@@ -46,7 +46,7 @@ sentinel down-after-milliseconds mymaster 1000
 
 ### 启动命令
 
-准备好 `docker-compose` 文件后，我们就可以部署了。在 Redis Sentinel 目录中启动 docker-compose。
+准备好 `docker-compose` 文件后，我们就可以部署了。在 [failover](https://github.com/adevjoe/redis-simple/tree/main/failover) 目录中启动 docker-compose。
 
 ```shell
 cd failover
@@ -89,3 +89,4 @@ $ docker exec sentinel-1 redis-cli -h 172.22.0.3 -p 7001 get a
 1
 ```
 
+（完）
