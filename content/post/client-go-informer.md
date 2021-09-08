@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes Informer 源码分析"
-date: 2021-03-08T01:56:30+08:00
-lastmod: 2021-03-08T01:56:30+08:00
+date: 2021-03-08T22:56:30+08:00
+lastmod: 2021-03-08T22:56:30+08:00
 draft: false
 keywords: ["Client-go", "informer", "Kubernetes"]
 description: "Kubernetes Informer 源码分析"
