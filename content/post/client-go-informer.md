@@ -43,7 +43,7 @@ mathjax: false
 List/Watch -> 本地缓存 -> 提供访问/事件回调
 
 ![Informer 运行原理|600](https://images.adevjoe.com/2021-09-08-ZyLSWJ.jpg)
-（图来自：https://github.com/kubernetes/sample-controller/blob/master/docs/controller-client-go.md）
+（图来自：[itnext.io](https://itnext.io/how-to-create-a-kubernetes-custom-controller-using-client-go-f36a7a7536cc)）
 
 关键组件：
 - Reflector
