@@ -39,6 +39,7 @@ disqusShortname = "adevjoe"
     twitter = "https://twitter.com/adevjoe"
     twitch = ""
     whatsapp = ""
+    rss = "/index.xml"
 
   # Comments settigns
   [params.comments]
@@ -55,9 +56,9 @@ disqusShortname = "adevjoe"
 #[[menu.header]]
 #  name = "Tags"
 #  url = "/tags/"
-[[menu.footer]]
-    name = "RSS"
-    url = "/index.xml"
+#[[menu.footer]]
+#    name = "RSS"
+#    url = "/index.xml"
 
 [markup]
 [markup.highlight]
