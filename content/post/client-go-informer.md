@@ -3,10 +3,17 @@ title: "Kubernetes Informer 源码分析"
 date: 2021-03-08T22:56:30+08:00
 lastmod: 2021-03-08T22:56:30+08:00
 draft: false
-keywords: ["Client-go", "informer", "Kubernetes"]
+keywords:
+  - Kubernetes
+  - informer
+  - client-go
 description: "Kubernetes Informer 源码分析"
-tags: ["Client-go", "informer", "Kubernetes"]
-categories: ["Kubernetes"]
+tags:
+  - Kubernetes
+  - informer
+  - client-go
+categories:
+  - Kubernetes
 author: "Joe"
 
 # You can also close(false) or open(true) something for this content.
