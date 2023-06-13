@@ -1,9 +1,9 @@
 ---
 title: "WASM On Kubernetes"
 author: "Joe"
-date: 2023-06-14T01:07:18+08:00
-lastmod: 2023-06-14T01:07:18+08:00
-draft: false
+date: 2022-06-14T01:07:18+08:00
+lastmod: 2022-06-14T01:07:18+08:00
+draft: true
 description: "在 Kubernetes 中运行 WASM 程序"
 keywords:
   - WebAssembly
