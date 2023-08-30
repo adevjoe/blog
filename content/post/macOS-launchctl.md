@@ -1,5 +1,5 @@
 ---
-title: macOS-launchctl
+title: macOS launchctl 守护进程
 date: 2023-08-29
 lastmod: 2023-08-29
 draft: false
