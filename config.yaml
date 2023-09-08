@@ -58,6 +58,9 @@ params:
     giscus:
       repo: adevjoe/blog
       id: MDEwOlJlcG9zaXRvcnkxNjQ1NjAyNjA=
+      mapping: title
+      reactionsEnabled: 1
+      emitMetadata: 0
       category:
         name: Comments
         id: DIC_kwDOCc79hM4CZK3w
