@@ -1,0 +1,81 @@
+baseurl: "https://adevjoe.com"
+languageCode: "zh-cn"
+title: "Joe's Blog"
+theme: "hugo-tania"
+paginate: 6
+
+disqusShortname: adevjoe
+
+params:
+  # Emoji will show before the blog title on site navbar.
+  titleEmoji:
+
+  # Logo will show before the blog title on site navbar.
+  titleLogo:
+  
+  # Enable float footnotes.
+  # Default to true
+  enableFootnotes: true
+  
+  siteName: "Joe's Blog"
+  siteDesc: "Joe's Blog"
+  author: Joe
+
+  colorScheme:
+    # Enable toggle colorScheme
+    # Default to true
+    toggle: true
+    # Default colorScheme
+    # Default to auto
+    default: auto
+
+  # Limit how many categories filter show above search input.
+  # Default to 5
+  maxCategoryToShow: 10
+
+  # Show your socail information with icon on index bio with `_index.md` content.
+  socialOptions:
+    dev-to:
+    email: "adevjoe@gmail.com"
+    facebook:
+    github: "http://github.com/adevjoe"
+    instagram:
+    linkedin:
+    medium:
+    stack-overflow:
+    steam: "https://steamcommunity.com/id/adevjoe"
+    telegram: "https://t.me/adevjoe"
+    twitter: "https://twitter.com/adevjoe"
+    twitch:
+    whatsapp:
+    rss: "/index.xml"
+  
+  # Comments settings
+  comments:
+    enabled: true
+    provider: giscus
+
+    giscus:
+      repo: adevjoe/blog
+      id: MDEwOlJlcG9zaXRvcnkxNjQ1NjAyNjA=
+      category:
+        name: Comments
+        id: DIC_kwDOCc79hM4CZK3w
+
+menu:
+  header:
+    - name: Articles
+      url: "/articles/"
+    - name: Categories
+      url: "/categories/"
+
+markup:
+  highlight:
+    noClasses: false
+    lineNos: true
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
