@@ -4,3 +4,4 @@ resume.pdf
 .DS_Store
 *.lock
 .test
+.vscode
